@@ -17,9 +17,6 @@ describe("Verifying Login Process for SauceDemo", () => {
         //Validamos que las compras indicadas estén agregadas
         cy.contains("Sauce Labs Onesie")
         cy.contains("Sauce Labs Backpack")
-        // cy.get("class").should("have.class", "Sauce Labs Onesie");
-        //cy.get("div").should("have.class", "inventory_item_name");
-        // Assertion that verifies that products list is displayed
-      //  cy.get(".title").should("have.text", "Products")
+        
       });
     });
