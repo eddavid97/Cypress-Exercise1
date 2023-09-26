@@ -15,6 +15,7 @@
   "author": "Edgar C",
   "license": "MIT",
   "devDependencies": {
+    "cypress": "^13.2.0",
     "typescript": "^5.2.2"
   }
 }
