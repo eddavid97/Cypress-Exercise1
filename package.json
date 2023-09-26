@@ -4,7 +4,8 @@
   "description": "Train",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress run",
+    "test:open": "cypress open"
   },
   "keywords": [
     "ui-testing",
