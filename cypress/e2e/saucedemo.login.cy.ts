@@ -1,3 +1,6 @@
+import { LoginPage } from "../page/index";
+const loginPage = new LoginPage();
+
 describe("Verifying Login Process for SauceDemo", () => {
     beforeEach(() => {
       cy.clearCookies();
@@ -16,11 +19,9 @@ describe("Verifying Login Process for SauceDemo", () => {
     });
 
     it("Login should work for existing user.", () => {
-        cy.get("[id^=user-name]").type("standard_user");
-        cy.get("[id^=password]").type("secret_sauce");
-        cy.get("[id^=login-button]").click();
-    
-        // Assertion that verifies that products list is displayed
-        cy.get(".title").should("have.text", "Products")
-      });
+      loginPage.login("standard_user", "secret_sauce");
+
+      // Assertion that verifies that products list is displayed
+      cy.get(".title").should("have.text", "Products")
+    });
   });
